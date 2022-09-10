@@ -1,0 +1,12 @@
+<h1><%= @article.title %></h1>
+
+<h2><%= @acticle.content %></h2>
+
+<p>Click to complete Article</p>
+
+<%= link_to 'back to list', articles_path %>
+
+<%= link_to 'edit', edit_article_path %>
+
+<%= link_to 'borrar', article_path(@article), data: {turbo_method: :delete, turbo_confirm: "Are you sure?"}
+ %>
