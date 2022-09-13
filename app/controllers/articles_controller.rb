@@ -1,4 +1,4 @@
-class ArticleController < ApplicationController
+class ArticlesController < ApplicationController
   before_action :set_article, only: %i[show edit update destroy]
 
   def index
@@ -44,4 +44,3 @@ class ArticleController < ApplicationController
     @article = Article.find(params[:id])
   end
 end
-
